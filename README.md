@@ -31,10 +31,13 @@ AccessibleGrids.organize(grid)
 Reorders the given grid's elements according to the calculated grid order.
 
 ```javascript
-AccessibleGrids.index(grid)
+AccessibleGrids.index(grid, options)
 ```
 
 Adds `tabindex` values to the given grid's elements according to the calculated grid order.
+
+Options:
+* `offset`: The offset to apply to tab index values, default `0`.
 
 ## Compatibility
 

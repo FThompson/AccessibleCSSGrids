@@ -66,4 +66,4 @@ const view = [
 
 const calculator = app({ state, actions }, view);
 renderElement(document.body, calculator);
-AccessibleGrids.organize(document.getElementById('calculator'));
+AccessibleGrids.index(document.getElementById('calculator'), {offset: 4});

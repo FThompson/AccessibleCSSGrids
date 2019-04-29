@@ -12,10 +12,12 @@ const AccessibleGrids = (() => {
     }
 
     // apply tab index values according to grid position
-    function index(grid, options) {
+    function index(grid, options={}) {
+        let defaults = { offset: 0 };
+        options = Object.assign(defaults, options);
         let elements = sort(grid);
         for (let i = 0; i < elements.length; i++) {
-            elements[i].tabIndex = i;
+            elements[i].tabIndex = i + options.offset;
         }
     }
 
