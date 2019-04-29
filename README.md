@@ -1,0 +1,3 @@
+# Accessible CSS Grids
+
+CSS grid items can be positioned with precise values in CSS, allowing developers to ignore HTML source order of their grid elements. By ignoring their HTML source, developers fail to account for accessbility needs for people who use screen readers or use the tab key to traverse through elements in a document. This simple library seeks to make the underlying grid accessible by abstracting how the source elements are ordered.
